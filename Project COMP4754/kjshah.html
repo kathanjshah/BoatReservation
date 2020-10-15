@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>COMP 4754 Project</title>
+</head>
+<body>
+    <div class="center">
+    <h1 class="center">COMP 4754 PROJECT</h1>
+    <h2 class="center">Kathan Jay Shah</h2>
+    <h2 class="center">StudID: 201859790</h2>
+    <h1>
+        a): Reterive Suppliers information, given the name of part.
+    </h1>
+    <form method="POST" action="cgi-bin/kathan_shah_201859790.py">
+        Please Enter the name of the part: <input type="text" name="pname" > <br>
+        Please enter the info you want for the supplier:
+        <br>
+        <input type="checkbox" name="sid"> supplier id <br>
+        <input type="checkbox" name="sname"> supplier name <br>
+        <input type="checkbox" name="address"> supplier address <br>
+        <input type="checkbox" name="cost"> cost of the part <br>
+        <input type="Submit" value="Result" name="query2">
+
+    </form>
+    <h1>
+        b): Retrieve the names of the suppliers who have ever supplied a part with that cost or higher, Given the cost. 
+    </h1>
+    <form method="POST" action="cgi-bin/kathan_shah_201859790.py">
+        Please Enter cost: <input type="number" name="cost"><br>
+        <input type="submit" value="Result" name="query1">
+    </form>
+    
+    <h1>
+        c): Retrieve the names and addresses for the suppliers who charge the most for that part, given the pid.
+    </h1>
+    <form method="POST" action="cgi-bin/kathan_shah_201859790.py">
+        Please Enter pid: <input type="text" name="pid"><br>
+        <input type="submit" value="Result" name="query3">    
+    </form>
+    <h1>
+        d): Retrieve the names of the parts with that color which were supplied by all the suppliers in the given address, given the color and address.
+    </h1>
+    <form method="POST" action="cgi-bin/kathan_shah_201859790.py">
+        Enter color: <input type="text" name="color"><br>
+        Enter address: <input type="text" name="address"><br>
+        <input type="submit" value="Result" name="query4">
+    </form>
+    <h1>
+        e): Retrieve the sids and names of the suppliers in that address who do not supply any part, given the address.
+    </h1>
+    <form method="POST" action="cgi-bin/kathan_shah_201859790.py">
+        Enter address: <input type="text" name="address"><br>
+        <input type="submit" value="Result" name="query5">
+    </form> 
+    </div>
+</body>
+</html>
+
